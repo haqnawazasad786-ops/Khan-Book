@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Pending Requests</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .header {
+            background-color: #1f1f1f;
+            padding: 15px 20px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #4CAF50;
+        }
+        .container {
+            padding: 15px;
+        }
+        .request-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .request-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #bbb;
+        }
+        .amount {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 8px;
+        }
+        .details p {
+            margin: 4px 0;
+            font-size: 13px;
+            color: #ccc;
+        }
+        .actions {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-approve {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-reject {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Admin Panel (Manual Approvals)</h2>
+        <span>Live</span>
+    </div>
+
+    <div class="container">
+        <!-- Sample Request 1 -->
+        <div class="request-card">
+            <div class="request-header">
+                <span>User: Ali Khan</span>
+                <span>Just now</span>
+            </div>
+            <div class="amount">Rs. 500</div>
+            <div class="details">
+                <p><strong>Account:</strong> EasyPaisa (HaqNawaz)</p>
+                <p><strong>Status:</strong> Pending Verification</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-approve" onclick="alert('Payment Approved! User balance updated.')">Approve</button>
+                <button class="btn btn-reject" onclick="alert('Payment Rejected!')">Reject</button>
+            </div>
+        </div>
+
+        <!-- Sample Request 2 -->
+        <div class="request-card">
+            <div class="request-header">
+                <span>User: Usman Ahmed</span>
+                <span>5 mins ago</span>
+            </div>
+            <div class="amount">Rs. 1,500</div>
+            <div class="details">
+                <p><strong>Account:</strong> Nayapay (HaqNawaz)</p>
+                <p><strong>Status:</strong> Pending Verification</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-approve" onclick="alert('Payment Approved! User balance updated.')">Approve</button>
+                <button class="btn btn-reject" onclick="alert('Payment Rejected!')">Reject</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

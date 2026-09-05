@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Account</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding-bottom: 80px;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #111;
+        }
+        .header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+        }
+        .container {
+            padding: 15px;
+        }
+        .account-card {
+            background-color: #fff0f3;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ffd6de;
+        }
+        .account-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+            color: #000;
+        }
+        .account-info p {
+            margin: 3px 0;
+            font-size: 13px;
+            color: #444;
+        }
+        .account-info .acc-number {
+            font-weight: bold;
+            color: #111;
+            font-size: 13px;
+        }
+        .checkbox-box input {
+            width: 20px;
+            height: 20px;
+            accent-color: #006400;
+            cursor: pointer;
+        }
+        .footer-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 15px;
+            box-sizing: border-box;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        }
+        .btn-transfer {
+            background-color: #006400;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Select Account</h2>
+        <p>Transfer funds on selected account and click Transfer Button.</p>
+    </div>
+
+    <div class="container">
+        <!-- EasyPaisa -->
+        <div class="account-card">
+            <div class="account-info">
+                <h3>EasyPaisa</h3>
+                <p>HaqNawaz</p>
+                <p class="acc-number">03066097297</p>
+            </div>
+            <div class="checkbox-box">
+                <input type="radio" name="acc" checked>
+            </div>
+        </div>
+
+        <!-- NayaPay -->
+        <div class="account-card">
+            <div class="account-info">
+                <h3>Nayapay</h3>
+                <p>HaqNawaz</p>
+                <p class="acc-number">03066097297</p>
+            </div>
+            <div class="checkbox-box">
+                <input type="radio" name="acc">
+            </div>
+        </div>
+
+        <!-- SadaPay -->
+        <div class="account-card">
+            <div class="account-info">
+                <h3>Sadapay</h3>
+                <p>HaqNawaz</p>
+                <p class="acc-number">03066097297</p>
+            </div>
+            <div class="checkbox-box">
+                <input type="radio" name="acc">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-btn">
+        <button class="btn-transfer" onclick="alert('Transfer button clicked!')">Transfer</button>
+    </div>
+
+</body>
+</html>

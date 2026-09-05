@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit - Enter Amount</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .header {
+            background-color: #006400;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .card {
+            background: #eafbea;
+            border: 1px solid #c8e6c9;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px;
+        }
+        .card h3 {
+            margin: 0 0 5px 0;
+            font-size: 15px;
+            color: #004d00;
+        }
+        .card p {
+            margin: 0;
+            font-size: 13px;
+            color: #333;
+        }
+        .input-section {
+            background: white;
+            border: 1px solid #c8e6c9;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px;
+        }
+        .input-section label {
+            font-weight: bold;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .input-section p {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .input-section input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .upload-box {
+            border: 2px dashed #006400;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            background: #fafafa;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .upload-box p {
+            margin: 5px 0 0 0;
+            font-weight: bold;
+            color: #006400;
+        }
+        .footer-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 15px;
+            box-sizing: border-box;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        }
+        .btn-next {
+            background-color: #006400;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span>&lt;</span>
+        <h2>Deposit</h2>
+    </div>
+
+    <!-- Selected Account Info -->
+    <div class="card">
+        <h3>HaqNawaz (03066097297)</h3>
+        <p>Transfer funds on selected account and submit proof.</p>
+    </div>
+
+    <!-- Enter Amount Section -->
+    <div class="input-section">
+        <label>Enter Amount!</label>
+        <p>Transfer funds on selected account and click Next Button.</p>
+        <input type="number" placeholder="e.g. 500">
+    </div>
+
+    <!-- Upload Proof Section -->
+    <div class="input-section">
+        <label>Upload Payment Proof</label>
+        <p>Attach your transaction screenshot here.</p>
+        <div class="upload-box" onclick="alert('Open gallery to select screenshot')">
+            📁
+            <p>Upload Screenshot</p>
+        </div>
+    </div>
+
+    <div class="footer-btn">
+        <button class="btn-next" onclick="alert('Request Submitted! Payment will be approved in 30 minutes.')">Submit Request</button>
+    </div>
+
+</body>
+</html>
